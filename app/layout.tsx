@@ -22,12 +22,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body>
-        <div className="fixed right-0 left-0 w-full top-0 bg-white dark:bg-zinc-950">
+        <div className="fixed right-0 left-0 w-full top-0 bg-american-white dark:bg-slate-900 border-b border-american-silver dark:border-slate-700 backdrop-blur-sm bg-opacity-95">
           <div className="flex justify-between items-center p-4">
             <div className="flex flex-row items-center gap-2 shrink-0 ">
               <span className="jsx-e3e12cc6f9ad5a71 flex flex-row items-center gap-2 home-links">
                 <Link
-                  className="text-zinc-800 dark:text-zinc-100 -translate-y-[.5px]"
+                  className="text-american-navy dark:text-american-white -translate-y-[.5px] hover:text-american-red transition-colors"
                   rel="noopener"
                   target="_blank"
                   href="https://vercel.com/"
@@ -48,7 +48,7 @@ export default function RootLayout({
                     />
                   </svg>
                 </Link>
-                <div className="jsx-e3e12cc6f9ad5a71 w-4 text-lg text-center text-zinc-300 dark:text-zinc-600">
+                <div className="jsx-e3e12cc6f9ad5a71 w-4 text-lg text-center text-american-silver dark:text-slate-500">
                   <svg
                     data-testid="geist-icon"
                     height={16}
@@ -68,7 +68,7 @@ export default function RootLayout({
                 <div className="jsx-e3e12cc6f9ad5a71 flex flex-row items-center gap-4">
                   <Link className="flex flex-row items-center gap-2" href="/">
                     <div className="jsx-e3e12cc6f9ad5a71 flex flex-row items-center gap-2">
-                      <div className="jsx-e3e12cc6f9ad5a71 text-zinc-800 dark:text-zinc-100">
+                      <div className="jsx-e3e12cc6f9ad5a71 text-american-navy dark:text-american-white">
                         <svg
                           data-testid="geist-icon"
                           height={16}
@@ -91,7 +91,7 @@ export default function RootLayout({
                           />
                         </svg>
                       </div>
-                      <div className="jsx-e3e12cc6f9ad5a71 text-lg font-bold text-zinc-800 dark:text-zinc-100">
+                      <div className="jsx-e3e12cc6f9ad5a71 text-lg font-bold text-american-navy dark:text-american-white">
                         AI{' '}
                         <span className="jsx-e3e12cc6f9ad5a71 hidden min-[385px]:inline">
                           SDK

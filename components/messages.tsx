@@ -145,7 +145,7 @@ export function Messages({ messages, status }: MessagesProps) {
         >
           <div
             className={cn("flex flex-col gap-4", {
-              "dark:bg-zinc-800 bg-zinc-200 p-2 rounded-xl w-fit ml-auto":
+              "bg-american-navy text-american-white p-3 rounded-xl w-fit ml-auto shadow-american":
                 message.role === "user",
               "": message.role === "assistant",
             })}
@@ -179,7 +179,7 @@ export function Messages({ messages, status }: MessagesProps) {
       ))}
 
       {status === "submitted" && (
-        <div className="text-zinc-500 mb-12 w-full">Hmm...</div>
+        <div className="text-american-charcoal/70 dark:text-slate-400 mb-12 w-full">Hmm...</div>
       )}
     </div>
   );

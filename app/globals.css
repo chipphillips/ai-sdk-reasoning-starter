@@ -3,18 +3,60 @@
 @tailwind utilities;
 
 :root {
-    --background: #ffffff;
-    --foreground: #171717;
+  /* Modern American Color Palette */
+  
+  /* Primary Colors */
+  --american-navy: #1e3a5f;        /* Deep Navy Blue - Primary brand color */
+  --american-red: #c41e3a;         /* Classic American Red - Accent color */
+  --american-white: #fafafa;       /* Crisp Off-White - Clean background */
+  
+  /* Secondary/Neutral Colors */
+  --american-charcoal: #2d3748;    /* Professional Charcoal - Text and UI elements */
+  --american-silver: #e2e8f0;      /* Light Silver - Borders and subtle backgrounds */
+  --american-cream: #f7fafc;       /* Warm Cream - Alternative background */
+  
+  /* Semantic Applications */
+  --background: var(--american-white);
+  --foreground: var(--american-charcoal);
+  --primary: var(--american-navy);
+  --accent: var(--american-red);
+  --muted: var(--american-silver);
+  --card: var(--american-cream);
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        --background: #0a0a0a;
-        --foreground: #ededed;
-    }
+  :root {
+    /* Dark Mode Adaptations */
+    --background: #0f172a;           /* Deep slate for dark backgrounds */
+    --foreground: var(--american-white);
+    --primary: #3b82f6;              /* Lighter blue for dark mode visibility */
+    --accent: #ef4444;               /* Adjusted red for dark mode */
+    --muted: #334155;                /* Darker muted tone */
+    --card: #1e293b;                 /* Dark card background */
+  }
 }
 
 body {
-    color: var(--foreground);
-    background: var(--background);
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
 }
+
+/* Custom utility classes for the American palette */
+.bg-american-navy { background-color: var(--american-navy); }
+.bg-american-red { background-color: var(--american-red); }
+.bg-american-white { background-color: var(--american-white); }
+.bg-american-charcoal { background-color: var(--american-charcoal); }
+.bg-american-silver { background-color: var(--american-silver); }
+.bg-american-cream { background-color: var(--american-cream); }
+
+.text-american-navy { color: var(--american-navy); }
+.text-american-red { color: var(--american-red); }
+.text-american-white { color: var(--american-white); }
+.text-american-charcoal { color: var(--american-charcoal); }
+.text-american-silver { color: var(--american-silver); }
+.text-american-cream { color: var(--american-cream); }
+
+.border-american-navy { border-color: var(--american-navy); }
+.border-american-red { border-color: var(--american-red); }
+.border-american-silver { border-color: var(--american-silver); }
